@@ -15,9 +15,9 @@ with gzip.open("similarity.pkl.gz", "rb") as f:
 
 
 
-medicine_dict=pickle.load(open('med_dict.pkl', 'rb'))
-medis=pd.DataFrame(medicine_dict)
-similarity=pickle.load(open('similarity.pkl', 'rb'))
+
+medis=pd.DataFrame(med_dict)
+
 
 def recommend(med):
     med_index=medis[medis['Drug_Name']==med].index[0]
