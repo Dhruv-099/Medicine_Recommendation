@@ -7,10 +7,10 @@ import urllib.parse
 import joblib
 import gzip
 
-with gzip.open("models/med_dict.pkl.gz", "rb") as f:
+with gzip.open("med_dict.pkl.gz", "rb") as f:
     med_dict = joblib.load(f)
 
-with gzip.open("models/similarity.pkl.gz", "rb") as f:
+with gzip.open("similarity.pkl.gz", "rb") as f:
     similarity = joblib.load(f)
 
 
